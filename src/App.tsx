@@ -2,8 +2,8 @@ import React from 'react';
 import {Routes, Route, NavLink} from 'react-router-dom';
 import './App.css';
 import {Homepage} from './components/Homepage'
-import {Aboutpage} from './components/Aboutpage'
-import {Blogpage} from './components/Blogpage'
+import {About} from './components/Aboutpage'
+import {Blog} from './components/Blogpage'
 import {Notfoundpage} from './components/Notfoundpage'
 
 const App =()=> {
@@ -16,8 +16,8 @@ const App =()=> {
             </header>
             <Routes>
                 <Route path={"/"} element={<Homepage/>}/>
-                <Route path={"/about"} element={<Aboutpage/>}/>
-                <Route path={"/blog"} element={<Blogpage/>}/>
+                <Route path={"/about"} element={<About/>}/>
+                <Route path={"/blog"} element={<Blog/>}/>
                 <Route path={"*"} element={<Notfoundpage/>}/>
             </Routes>
         </div>
