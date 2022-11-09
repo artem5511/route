@@ -6,6 +6,7 @@ import {About} from './components/Aboutpage'
 import {Blog} from './components/Blogpage'
 import {Notfoundpage} from './components/Notfoundpage'
 
+
 const App = () => {
     return (
         <div>
