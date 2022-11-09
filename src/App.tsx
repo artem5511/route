@@ -6,20 +6,22 @@ import {About} from './components/Aboutpage'
 import {Blog} from './components/Blogpage'
 import {Notfoundpage} from './components/Notfoundpage'
 
-const App =()=> {
+const App = () => {
     return (
         <div>
-            <header>
-                <NavLink to={"/"}>Home</NavLink>
-                <NavLink to={"/blog"}>Blog</NavLink>
-                <NavLink to={"/about"}>About</NavLink>
-            </header>
-            <Routes>
-                <Route path={"/"} element={<Homepage/>}/>
-                <Route path={"/about"} element={<About/>}/>
-                <Route path={"/blog"} element={<Blog/>}/>
-                <Route path={"*"} element={<Notfoundpage/>}/>
-            </Routes>
+            <div className={'one'}>
+                <header className={'hed'}>
+                    <NavLink to={"/"}>Home</NavLink>
+                    <NavLink to={"/blog"}>Blog</NavLink>
+                    <NavLink to={"/about"}>About</NavLink>
+                </header>
+                <Routes>
+                    <Route path={"/"} element={<Homepage/>}/>
+                    <Route path={"/about"} element={<About/>}/>
+                    <Route path={"/blog"} element={<Blog/>}/>
+                    <Route path={"*"} element={<Notfoundpage/>}/>
+                </Routes>
+            </div>
         </div>
     );
 }
